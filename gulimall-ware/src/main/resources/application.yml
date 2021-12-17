@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.1.45:3306/gulimall_wms
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  #  点击进去可以查看默认值，跟下面一样
+  #  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      #      设置tableid为自增主键
+      id-type: auto
+server:
+  port: 11000
